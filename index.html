@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="B&F Madeiras Eucalipto — força do eucalipto, qualidade que constrói." />
     <title>B&F Madeiras Eucalipto | Cloeziana</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "B&F Madeiras Eucalipto",
+        "description": "Venda de madeira de eucalipto em Jacinto, Minas Gerais.",
+        "telephone": "+55 33 8753-0023",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Pedro Araújo, 1070",
+          "addressLocality": "Jacinto",
+          "addressRegion": "MG",
+          "addressCountry": "BR"
+        },
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:30", "closes": "11:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "13:00", "closes": "17:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:30", "closes": "12:00" }
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="location.css" />
+    <link rel="stylesheet" href="quote.css" />
   </head>
   <body>
     <div class="topbar"><span>Venda de madeira de eucalipto</span><span>Atendimento rápido e personalizado</span></div>
@@ -54,9 +77,57 @@
         </div>
       </section>
 
+      <section class="quote section" id="orcamento" aria-labelledby="orcamento-titulo">
+        <div class="quote-copy">
+          <p class="eyebrow">Orçamento rápido</p>
+          <h2 id="orcamento-titulo">Conte o que você precisa.</h2>
+          <p>Informe os detalhes do seu projeto e fale diretamente pelo WhatsApp. Nossa equipe ajuda você a encontrar a madeira certa.</p>
+          <div class="service-options">
+            <div><b>Entrega ou retirada</b><span>Consulte a disponibilidade para sua cidade ou retire no local.</span></div>
+            <div><b>Produtos sob consulta</b><span>Informe o produto, a medida e a quantidade que você procura.</span></div>
+          </div>
+        </div>
+        <form class="quote-form" id="quote-form">
+          <label>Seu nome<input name="name" type="text" autocomplete="name" required placeholder="Como podemos te chamar?" /></label>
+          <label>Seu WhatsApp<input name="phone" type="tel" autocomplete="tel" required placeholder="(00) 00000-0000" /></label>
+          <label>Produto<select name="product" required><option value="" selected disabled>Selecione um produto</option><option>Mourões</option><option>Vigas e peças</option><option>Toras de eucalipto</option><option>Outro produto</option></select></label>
+          <label>Quantidade ou medida<textarea name="details" rows="3" required placeholder="Ex.: 30 mourões de 2,20 m"></textarea></label>
+          <label>Como prefere receber?<select name="fulfillment" required><option value="" selected disabled>Selecione uma opção</option><option>Entrega</option><option>Retirada no local</option><option>Quero consultar as opções</option></select></label>
+          <label>Atendimento<select name="contact" required><option value="jeferson">Jeferson</option><option value="rafael">Rafael</option></select></label>
+          <button class="button button-primary quote-submit" type="submit">Pedir orçamento no WhatsApp <span>→</span></button>
+        </form>
+      </section>
+
       <section class="promise" id="diferenciais"><div class="promise-image"><img src="logo-bf-madeiras.jpeg" alt="Marca B&F Madeiras Eucalipto" /></div><div class="promise-content"><p class="eyebrow">Por que escolher a B&F</p><h2>A solidez que seu projeto merece.</h2><div class="promise-list"><div><b>01</b><span><strong>Madeira selecionada</strong>Qualidade visível em cada peça.</span></div><div><b>02</b><span><strong>Atendimento de verdade</strong>Orientação para você comprar bem.</span></div><div><b>03</b><span><strong>Compromisso na entrega</strong>Parceria do pedido à sua obra.</span></div></div></div></section>
 
-      <section class="contact section" id="contato"><div class="contact-copy"><p class="eyebrow">Vamos conversar?</p><h2>Seu projeto começa com uma boa escolha.</h2><p>Fale com a B&F Madeiras Eucalipto e peça uma cotação sem compromisso. Você pode ser atendido pelo Jeferson ou pelo Rafael.</p></div><div class="contact-buttons"><a class="contact-button" href="https://wa.me/553387530023?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener"><span>WhatsApp · Jeferson</span><b>(33) 8753-0023 →</b></a><a class="contact-button" href="https://wa.me/553388404815?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener"><span>WhatsApp · Rafael</span><b>(33) 8840-4815 →</b></a></div></section>
+      <section class="contact section" id="contato"><div class="contact-copy"><p class="eyebrow">Vamos conversar?</p><h2>Seu projeto começa com uma boa escolha.</h2><p>Fale com a B&F Madeiras Eucalipto e peça uma cotação sem compromisso. Você pode ser atendido pelo Jeferson ou pelo Rafael.</p></div><a class="contact-button" href="https://wa.me/553388404815?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener"><span>WhatsApp · Rafael</span><b>Falar com Rafael →</b></a></section>
+      <section class="location section" aria-labelledby="localizacao-titulo">
+        <div class="location-copy">
+          <p class="eyebrow">Onde estamos</p>
+          <h2 id="localizacao-titulo">Venha nos visitar.</h2>
+          <address>Avenida Pedro Araújo, 1070<br />Jacinto – MG</address>
+          <div class="business-hours" aria-label="Horário de funcionamento">
+            <h3>Horário de funcionamento</h3>
+            <dl>
+              <div><dt>Segunda a sexta</dt><dd>07:30–11:00 · 13:00–17:00</dd></div>
+              <div><dt>Sábado</dt><dd>07:30–12:00</dd></div>
+              <div><dt>Domingo</dt><dd>Fechado</dd></div>
+            </dl>
+          </div>
+          <a class="button button-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+Pedro+Ara%C3%BAjo+1070%2C+Jacinto+-+MG" target="_blank" rel="noopener">Traçar rota <span>→</span></a>
+        </div>
+        <iframe class="location-map" title="Localização da B&F Madeiras Eucalipto" src="https://www.google.com/maps?q=Avenida%20Pedro%20Ara%C3%BAjo%201070%2C%20Jacinto%20-%20MG&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section class="faq section" aria-labelledby="faq-titulo">
+        <div><p class="eyebrow">Dúvidas frequentes</p><h2 id="faq-titulo">Tudo para comprar com segurança.</h2></div>
+        <div class="faq-list">
+          <details><summary>Vocês fazem entrega?</summary><p>Consulte a disponibilidade para sua cidade pelo WhatsApp. Informe o produto e a quantidade para receber as orientações.</p></details>
+          <details><summary>Posso retirar a madeira no local?</summary><p>Sim, fale com a equipe para confirmar a disponibilidade do produto antes de se deslocar.</p></details>
+          <details><summary>Como peço um orçamento?</summary><p>Use o formulário acima ou fale diretamente pelo WhatsApp. Informe o produto, a medida e a quantidade desejada.</p></details>
+          <details><summary>Quais medidas estão disponíveis?</summary><p>As medidas variam de acordo com o produto e o estoque. Entre em contato para encontrar a melhor opção para seu projeto.</p></details>
+        </div>
+      </section>
     </main>
 
     <footer><a class="brand footer-brand" href="#inicio"><img src="logo-bf-madeiras.jpeg" alt="B&F Madeiras" /><span><b>B&F</b> Madeiras<br />Eucalipto</span></a><p>Força do eucalipto, qualidade que constrói.</p><a href="#inicio" class="back-top">Voltar ao topo ↑</a></footer>
