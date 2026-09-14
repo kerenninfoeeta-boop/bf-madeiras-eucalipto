@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+h1, h2, .product-card h3, .contact-button b, .contact-person b, .business-hours h3 {
+  font-family:"Cormorant Garamond", "Playfair Display", serif;
+}
+
+.hero h1 {
+  font-size:clamp(54px, 6.4vw, 88px);
+  letter-spacing:-2.8px;
+  line-height:.92;
+}
+
+.hero h1 em { letter-spacing:-3px; }
+.intro h2, .section-heading h2, .promise h2, .contact h2, .quote h2, .faq h2, .location h2 { letter-spacing:-2.2px; }
+
+.eyebrow {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  letter-spacing:2.4px;
+}
+
+.eyebrow::before { content:""; width:27px; height:1px; background:currentColor; }
+
+.intro, .contact {
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(115deg, #f4efe5 0%, #f8f5ed 60%, #e9decf 100%);
+}
+
+.intro::after, .contact::after {
+  content:"B&F";
+  position:absolute;
+  right:-18px;
+  bottom:-46px;
+  color:#183b2b0c;
+  font:700 clamp(150px, 20vw, 310px) "Cormorant Garamond", serif;
+  line-height:1;
+  pointer-events:none;
+}
+
+.intro>*, .contact>* { position:relative; z-index:1; }
+
+.products { background:linear-gradient(135deg, #e0d3c0, #ecdfcf); }
+.product-card { border-bottom:4px solid transparent; transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.product-card:hover { border-color:#c88b50; box-shadow:0 16px 28px #17251c22; transform:translateY(-5px); }
+
+.quote { background:linear-gradient(115deg, #f7f3eb, #eee3d4); }
+.faq { position:relative; overflow:hidden; }
+.faq::before { content:""; position:absolute; width:420px; height:420px; border:1px solid #c4d28a2b; border-radius:50%; left:-190px; bottom:-255px; }
+.faq>* { position:relative; z-index:1; }
+
+.button-primary, .nav-cta { box-shadow:0 7px 16px #10291e29; }
+.button-primary:hover, .nav-cta:hover { background:#d9a86c; }
+
+@media(max-width:800px) {
+  .hero h1 { font-size:clamp(50px, 14vw, 66px); letter-spacing:-2px; }
+  .intro::after, .contact::after { font-size:180px; }
+}
