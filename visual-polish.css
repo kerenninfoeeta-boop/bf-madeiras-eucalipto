@@ -53,6 +53,15 @@ h1, h2, .product-card h3, .contact-button b, .contact-person b, .business-hours 
 .button-primary, .nav-cta { box-shadow:0 7px 16px #10291e29; }
 .button-primary:hover, .nav-cta:hover { background:#d9a86c; }
 
+/* Fotos reais dos produtos */
+.product-art img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
 @media(max-width:800px) {
   .hero h1 { font-size:clamp(50px, 14vw, 66px); letter-spacing:-2px; }
   .intro::after, .contact::after { font-size:180px; }
