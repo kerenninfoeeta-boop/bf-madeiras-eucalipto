@@ -91,13 +91,17 @@
           </div>
         </div>
         <form class="quote-form" id="quote-form">
-          <label>Seu nome<input name="name" type="text" autocomplete="name" required placeholder="Como podemos te chamar?" /></label>
-          <label>Seu WhatsApp<input name="phone" type="tel" autocomplete="tel" required placeholder="(00) 00000-0000" /></label>
-          <label>Produto<select name="product" required><option value="" selected disabled>Selecione um produto</option><option>Mourões</option><option>Caibos e peças</option><option>Toras de eucalipto</option><option>Estacas</option><option>Cochos</option><option>Outro produto</option></select></label>
-          <label>Quantidade ou medida<textarea name="details" rows="3" required placeholder="Ex.: 30 mourões de 2,20 m"></textarea></label>
-          <label>Como prefere receber?<select name="fulfillment" required><option value="" selected disabled>Selecione uma opção</option><option>Entrega</option><option>Retirada no local</option><option>Quero consultar as opções</option></select></label>
-          <label>Atendimento<select name="contact" required><option value="jeferson">Jeferson</option><option value="rafael">Rafael</option></select></label>
-          <button class="button button-primary quote-submit" type="submit">Pedir orçamento no WhatsApp <span>→</span></button>
+          <div class="form-title"><span>Ficha de orçamento</span><b>Preencha o que souber — o restante a equipe orienta.</b></div>
+          <label>1. Como podemos te chamar?<input name="name" type="text" autocomplete="name" required placeholder="Digite seu nome" /><small>Assim sabemos com quem estamos falando.</small></label>
+          <label>2. Qual é seu WhatsApp?<input name="phone" type="tel" autocomplete="tel" required placeholder="(00) 00000-0000" /><small>Para confirmar seu pedido rapidamente.</small></label>
+          <label>3. Qual produto você procura?<select name="product" required><option value="" selected disabled>Selecione um produto</option><option>Mourões</option><option>Caibos e peças</option><option>Toras de eucalipto</option><option>Estacas</option><option>Cochos</option><option>Outro produto</option></select><small>Escolha a opção mais próxima do que precisa.</small></label>
+          <label>4. Qual quantidade ou medida?<textarea name="details" rows="3" required placeholder="Ex.: 30 mourões de 2,20 m"></textarea><small>Se não souber a medida, descreva o seu projeto.</small></label>
+          <label>5. Onde será o atendimento?<input name="city" type="text" required placeholder="Cidade e estado" /><small>Informe sua cidade para facilitar a consulta.</small></label>
+          <label>6. Como prefere receber?<select name="fulfillment" required><option value="" selected disabled>Selecione uma opção</option><option>Entrega</option><option>Retirada no local</option><option>Quero consultar as opções</option></select><small>Você pode confirmar os detalhes com a equipe.</small></label>
+          <label>7. Para quando você precisa?<select name="timeline" required><option value="" selected disabled>Selecione uma opção</option><option>O quanto antes</option><option>Nos próximos dias</option><option>Estou pesquisando</option></select><small>Isso ajuda a equipe a entender sua necessidade.</small></label>
+          <label>8. Alguma observação? <em>Opcional</em><textarea name="notes" rows="3" placeholder="Ex.: tipo de obra, dúvida ou outra informação importante"></textarea><small>Inclua qualquer detalhe que ajude no atendimento.</small></label>
+          <label>9. Com quem você quer falar?<select name="contact" required><option value="jeferson">Jeferson</option><option value="rafael">Rafael</option></select><small>Seu formulário será enviado direto para a pessoa escolhida.</small></label>
+          <button class="button button-primary quote-submit" type="submit">Enviar ficha pelo WhatsApp <span>→</span></button>
         </form>
       </section>
 

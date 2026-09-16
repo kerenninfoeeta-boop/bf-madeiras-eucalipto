@@ -50,6 +50,6 @@ if (quoteForm) quoteForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const data = new FormData(quoteForm);
   const phone = data.get('contact') === 'rafael' ? '553388404815' : '553387530023';
-  const message = `Olá! Meu nome é ${data.get('name')}.\n\nProduto: ${data.get('product')}\nQuantidade ou medida: ${data.get('details')}\nPreferência: ${data.get('fulfillment')}\nWhatsApp: ${data.get('phone')}`;
+  const message = `*NOVA FICHA DE ORÇAMENTO — B&F MADEIRAS*\n\n*1. Nome:* ${data.get('name')}\n*2. WhatsApp:* ${data.get('phone')}\n*3. Produto procurado:* ${data.get('product')}\n*4. Quantidade ou medida:* ${data.get('details')}\n*5. Cidade/UF:* ${data.get('city')}\n*6. Preferência:* ${data.get('fulfillment')}\n*7. Necessidade:* ${data.get('timeline')}\n*8. Observações:* ${data.get('notes') || 'Não informado'}\n*9. Atendimento escolhido:* ${data.get('contact')}`;
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
 });
